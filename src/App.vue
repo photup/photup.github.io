@@ -4,11 +4,11 @@ import Content from "./components/IndexContent.vue";
 </script>
 
 <template>
-  <section class="index-area grid grid-cols-1 md:grid-cols-2 h-screen">
-    <div class="max-h-screen">
+  <section class="index-area md:grid md:grid-cols-2 h-screen">
+    <div class="md:max-h-screen">
       <Header title="Phot" titlespan="up." />
     </div>
-    <div class="max-h-screen overflow-y-scroll">
+    <div class="md:max-h-screen overflow-y-scroll">
       <Content />
     </div>
   </section>
@@ -24,5 +24,4 @@ section.index-area {
   background-position: center;
   background-size: cover;
 }
-
 </style>

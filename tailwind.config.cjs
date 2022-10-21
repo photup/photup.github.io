@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js,css,cjs,vue}","./index.html"],
+  content: ["./src/**/*.{html,js,css,cjs,vue}", "./index.html"],
   theme: {
     spacing: {
       '1': '8px',
@@ -9,6 +9,12 @@ module.exports = {
       '4': '24px',
       '5': '32px',
       '6': '48px',
+    },
+    screens: {
+      sm: '481px',
+      md: '800px',
+      lg: '976px',
+      xl: '1440px',
     },
     container: {
       center: true,
