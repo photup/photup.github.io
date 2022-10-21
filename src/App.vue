@@ -1,26 +1,30 @@
 <script setup>
-import Header from "./components/Header.vue";
+import Cover from "./components/Cover.vue";
 import Content from "./components/IndexContent.vue";
+import Header from "./components/Header.vue";
 </script>
 
 <template>
-  <section class="index-area md:grid md:grid-cols-2 h-screen">
-    <div class="md:max-h-screen">
-      <Header title="Phot" titlespan="up." />
+  <section class="index-area md:grid h-screen w-screen">
+    <div class="md:max-h-screen cover">
+      <Cover title="Phot" titlespan="up." />
     </div>
-    <div class="md:max-h-screen overflow-y-scroll">
+    <!--<div class="md:max-h-screen overflow-y-scroll">
       <Content />
-    </div>
+    </div>-->
+  </section>
+  <section class="sec-area">
+    <Header />
+    <Content />
   </section>
 </template>
 
 <style scoped>
-section.index-area {
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(217deg, #6cebde55, rgba(255, 0, 0, 0) 70.71%),
+div.cover {
+  /*background: linear-gradient(217deg, #6cebde55, rgba(255, 0, 0, 0) 70.71%),
     linear-gradient(127deg, #71afdd, rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, #7199f5, rgba(0, 0, 255, 0) 70.71%);
+    linear-gradient(336deg, #7199f5, rgba(0, 0, 255, 0) 70.71%);*/
+    background-image: url('https://imgur.lzmun.com/picgo/20200228233457.jpg_/fw/1280');
   background-position: center;
   background-size: cover;
 }

@@ -1,39 +1,72 @@
-<script setup>
-defineProps({
-  title: {
-    type: String,
-    required: true,
-  },
-  titlespan: {
-    type: String,
-    required: true,
-  },
-});
-</script>
-
+<script></script>
 <template>
-  <div class="title-area md:m-[0]">
-    <span class="font-[900] text-[48px] md:text-[80px]">{{ title }}</span>
-    <span class="font-[900] text-[48px] md:text-[80px]">{{ titlespan }}</span>
-    <p>Cherish every moment</p>
+  <div class="itp-float-bar shadow-itp">
+    <div class="left-item">
+      <a class="itp-float-bar-item " href="/" title="Photup">
+        Photup.
+      </a>
+    </div>
+    <div class="center-item">
+      <a class="itp-float-bar-item " href="/archives/" title="照片">
+        照片
+      </a>
+      <a class="itp-float-bar-item " href="/gallery/" title="视频">
+        视频
+      </a>
+    </div>
+    <div class="itp-float-layer itp-toc-layer">
+      <div class="clost-btn" style="display: flex">
+        <a class="itp-float-layer-close-btn" id="close_btn">
+          <div class="close_btn_red"></div>
+        </a>
+      </div>
+    </div>
+    <div class="itp-float-layer-bg layer-bg-nodisplay" id="close_layer"></div>
   </div>
 </template>
-
-<style scoped>
-@media (min-width: 800px) {
-  .title-area {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 48px;
-    backdrop-filter: blur(15px) brightness(120%);
-  }
+<style>
+root {
+  --border-radius: 3px;
 }
-@media (max-width: 800px) {
-  .title-area {
-    position: static;
-    padding: 36px 0px 12px 48px;
-  }
+
+.itp-float-bar {
+  z-index: 1000;
+  width: 100vw;
+  height: 80px;
+  border-radius: 0;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  background-color: #ffffff;
+  align-items: center;
+}
+
+.itp-float-bar .itp-float-bar-item {
+  background-color: transparent;
+  color: #304A5E;
+  font-size: 18px;
+}
+
+.left-item {
+  align-items: center;
+  vertical-align: middle;
+  position: absolute;
+}
+
+.left-item a {
+  padding: 0 24px;
+}
+
+.center-item {
+  margin: 0 auto;
+}
+
+.center-item a {
+  padding: 0 12px;
+}
+
+a.itp-float-bar-item {
+  text-decoration: none;
 }
 </style>

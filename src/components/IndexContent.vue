@@ -1,5 +1,5 @@
 <script>
-import { attributes, VueComponent } from "./contents/introduce.md";
+import { attributes, VueComponent } from "./contents/test.md";
 export default {
   name: "App",
   components: {
@@ -11,9 +11,10 @@ export default {
     };
   },
 };
+// Markdown converter learn form https://github.com/hmsk/vite-plugin-markdown/tree/main/examples/vue/src
 </script>
 <template>
-  <div class="content-area w-[100vw] md:w-[50vw] md:h-[100vh]">
+  <div class="content-area">
     <div class="p-6">
       <article>
         <content-markdown />
