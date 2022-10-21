@@ -1,139 +1,22 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <!--360 使用 Google Chrome Frame-->
   <meta name="renderer" content="webkit">
-  <!--百度禁止转码-->
   <meta http-equiv="Cache-Control" content="no-siteapp">
   <meta property="og:title" content="Theme Type" />
   <meta property="og:description" content="a beautiful hexo theme">
   <meta property="og:type" content="website" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Theme Type</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {},
-          container: {
-            center: true,
-          },
-        }
-      }
-    }
-  </script>
+  <title>Photup</title>
 </head>
 
 <body>
-  <section class="area-cover p-4 container max-w-[1000px] pt-[120px]">
-    <h1 class="color-tblack text-center text-[32px]">Theme Type for Hexo</h1>
-    <div class="flex flex-col md:flex-row justify-center items-center">
-      <span class="font-[900] text-[80px] bg-clip-text text-transparent bg-gradient-to-r from-[#5EFCE8] to-[#736EFE]">Pretty.</span>
-      <span class="font-[900] text-[80px] bg-clip-text text-transparent bg-gradient-to-r from-[#736EFE] to-[#FAD7A1]">Cosily.</span>
-      <span class="font-[900] text-[80px] bg-clip-text text-transparent bg-gradient-to-r from-[#FAD7A1] to-[#E96D71]">Fastly.</span>
-    </div>
-    <div class="p-4 gap-8 grid flex-col md:flex-row justify-center items-center grid-cols-1 md:grid-cols-3">
-      <div class="action-btn hover:drop-shadow-xl transition-all">
-        <div class='border-bg bg-1'></div>
-        <span>Features</span>
-        <a href="" class="action-link"></a>
-      </div>
-      <div class="action-btn hover:drop-shadow-xl transition-all">
-        <div class='border-bg bg-2'></div>
-        <span>Code</span>
-        <a href="https://github.com/aiokr/Hexo-Theme-Type" target="_blank" class="action-link"></a>
-      </div>
-      <div class="action-btn hover:drop-shadow-xl transition-all">
-        <div class='border-bg bg-3'></div>
-        <span>Docs</span>
-        <a href="https://docs.tripper.press/type/" target="_blank" class="action-link"></a>
-      </div>
-      <code class="action-btn text-gray-400 col-span-1 md:col-span-3">
-        <div class='border-bg bg-code'></div>
-        <span class="text-[#736EFE]">npm install </span>hexo-theme-type <span class="text-[#E96D71]">--save</span>
-      </code>
-    </div>
-    <div class="p-4 text-center">
-      <img class="" src="https://img.shields.io/github/v/release/aiokr/hexo-theme-type?style=flat-square&label=Release&logo=github" alt="version">
-      <img class="" src="https://img.shields.io/github/workflow/status/aiokr/hexo-theme-type/Hexo-Theme-Type%20auto%20test/dev?label=test&logo=github&style=flat-square" alt="test">
-      <img src="https://img.shields.io/npm/dm/hexo-theme-type?logo=npm&style=flat-square&label=Downloads" alt="downloads">
-    </div>
-    <div class="p-4 my-[0] mx-auto text-center">
-
-    </div>
-  </section>
-  <style>
-    body {
-      background-color: #fff !important;
-      --main-color: #71afdd;
-      font-family: "SF Pro Display", "PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Helvetica", "Hiragino Sans GB", sans-serif;
-    }
-
-    img {
-      display: inline-block;
-    }
-
-    .color-tblack {
-      color: #22283155;
-    }
-
-    .action-btn {
-      border: .2px solid transparent;
-      border-radius: 3px;
-      position: relative;
-      background-color: #fff;
-      background-clip: padding-box;
-      height: 46px;
-      text-align: center;
-      line-height: 46px;
-
-    }
-
-    .action-link {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      overflow: hidden;
-      text-indent: -9999px px;
-      z-index: 0;
-    }
-
-
-    .border-bg {
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      z-index: -1;
-      margin: -2px;
-      border-radius: inherit;
-
-    }
-
-    .bg-1 {
-
-      background: linear-gradient(to right, #5EFCE8, #736EFE);
-    }
-
-    .bg-2 {
-      background: linear-gradient(to right, #736EFE, #FAD7A1);
-    }
-
-    .bg-3 {
-      background: linear-gradient(to right, #FAD7A1, #E96D71);
-    }
-
-    .bg-code {
-      background: linear-gradient(to right, #CCCCCC, #F3F3F3);
-    }
-  </style>
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>

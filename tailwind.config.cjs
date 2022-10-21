@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js,ejs,css}", "./assets/**/*.{html,js,ejs,css}"],
+  content: ["./src/**/*.{html,js,css,cjs,vue}","./index.html"],
   theme: {
     spacing: {
       '1': '8px',
