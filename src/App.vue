@@ -6,7 +6,7 @@ import Header from "./components/Header.vue";
 
 <template>
   <section class="index-area md:grid h-screen w-screen">
-    <div class="md:max-h-screen cover">
+    <div class="h-screen cover flex">
       <Cover title="Phot" titlespan="up." />
     </div>
     <!--<div class="md:max-h-screen overflow-y-scroll">
@@ -21,11 +21,14 @@ import Header from "./components/Header.vue";
 
 <style scoped>
 div.cover {
-  /*background: linear-gradient(217deg, #6cebde55, rgba(255, 0, 0, 0) 70.71%),
-    linear-gradient(127deg, #71afdd, rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, #7199f5, rgba(0, 0, 255, 0) 70.71%);*/
-    background-image: url('https://imgur.lzmun.com/picgo/20200228233457.jpg_/fw/1280');
+  background: 
+    linear-gradient(45deg, #a6bce8, #ffc0c0 70.71%),
+    linear-gradient(225deg, #343434, #77cbb1 70.71%);
+  /*background-image: url('https://imgur.lzmun.com/picgo/20200228233457.jpg_/fw/1280');*/
   background-position: center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 </style>

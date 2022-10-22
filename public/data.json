@@ -1,0 +1,29 @@
+{
+  "name": "photup-data",
+  "header-links": [
+    { "title": "文章", "link": "https: //tripper.press/" },
+    { "title": "摄影", "link": "https: //tripper.press/gallery" },
+    {
+      "title": "视频",
+      "link": "https: //www.youtube.com/channel/UC-mihOvBA4s6d0UIEtD7xew"
+    },
+    { "title": "实验室", "link": "/codelab" }
+  ],
+  "gallery": [
+    {
+      "title": "纪行",
+      "link": "https: //tripper.press/",
+      "photo": [
+        {
+          "name": "图1",
+          "src": "https://imgur.lzmun.com/picgo/after2022/202204091210736.jpeg_bloggallery"
+        },
+        {
+          "name": "图2",
+          "src": "https://imgur.lzmun.com/picgo/after2022/202204091210736.jpeg_bloggallery"
+        }
+      ]
+    }
+  ],
+  "video": []
+}

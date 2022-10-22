@@ -14,14 +14,6 @@
         视频
       </a>
     </div>
-    <div class="itp-float-layer itp-toc-layer">
-      <div class="clost-btn" style="display: flex">
-        <a class="itp-float-layer-close-btn" id="close_btn">
-          <div class="close_btn_red"></div>
-        </a>
-      </div>
-    </div>
-    <div class="itp-float-layer-bg layer-bg-nodisplay" id="close_layer"></div>
   </div>
 </template>
 <style>
