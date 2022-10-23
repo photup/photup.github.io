@@ -12,11 +12,11 @@ const props = defineProps({
 });
 const CoverLinks = ref([
   { title: '文章', link: 'https://tripper.press/' },
-  { title: '摄影', link: 'https://tripper.press/gallery' },
-  { title: '视频', link: 'https://www.youtube.com/channel/UC-mihOvBA4s6d0UIEtD7xew' },
+  { title: '摄影', link: '/gallery' },
+  { title: '视频', link: '/videos' },
   { title: '实验室', link: '/codelab' },
 ])
-
+console.log(CoverLinks);
 </script>
 <template>
   <div class="cover-area md:m-[0] grid shadow-itp grid-cols-1 md:grid-cols-2 ">
@@ -27,8 +27,8 @@ const CoverLinks = ref([
     </div>
     <div class="cover-2 w-[auto] md:min-w-[300px] md:h-[300px] grid grid-cols-2 grid-rows-2">
       <div v-for="(item, index) in CoverLinks">
-        <div class="cover-items flex flex: 1 1 0%">
-          <a class="cover-links" :href="item.link" title="article">
+        <div class="cover-items">
+          <a class="cover-links" :href="item.link" :title="item.title">
             {{ item.title }}
           </a>
         </div>
@@ -78,6 +78,10 @@ const CoverLinks = ref([
   a.cover-links {
     line-height: 150px;
     text-decoration: none;
+    color: #304A5E;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
   }
 }
 

@@ -1,4 +1,5 @@
 <script setup>
+import { RouterLink, RouterView } from 'vue-router'
 import Cover from "./components/Cover.vue";
 import Content from "./components/IndexContent.vue";
 import Header from "./components/Header.vue";
@@ -21,11 +22,15 @@ import Header from "./components/Header.vue";
 
 <style scoped>
 div.cover {
-  background: 
-    linear-gradient(45deg, #a6bce8, #ffc0c0 70.71%),
-    linear-gradient(225deg, #343434, #77cbb1 70.71%);
-  /*background-image: url('https://imgur.lzmun.com/picgo/20200228233457.jpg_/fw/1280');*/
+  background:
+    radial-gradient(circle at 10% 10%,
+      #90caaf80 10%,
+      #ffffff00 100%),
+    radial-gradient(circle at 90% 90%,
+      #71afdd80 10%,
+      #ffffff00 100%);
   background-position: center;
+  background-attachment: fixed;
   background-size: cover;
   display: flex;
   flex-direction: column;

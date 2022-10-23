@@ -1,4 +1,31 @@
-<script></script>
+<script setup>
+import { ref } from 'vue'
+import axios from 'axios'
+
+/*
+let headerlinks = ref(null)
+let gettrue = 0
+axios({
+  method: 'get',
+  url: '/data/data.json'
+}).then(
+  function get(response) {
+    let headerlinks = ref(response.data.pages)
+    console.log("infn:", headerlinks) //在这里能打印出来
+    let getdata = 1
+    console.log(getdata)
+  });
+
+console.log("outside:", headerlinks) //在这里打印不出来
+*/
+
+let headerlinks = ref([
+  { "title": "文章", "link": "https://tripper.press/" },
+  { "title": "摄影", "link": "https://tripper.press/gallery" },
+  { "title": "视频", "link": "https://www.youtube.com/channel/UC-mihOvBA4s6d0UIEtD7xew" }
+])
+let getdata = 1
+</script>
 <template>
   <div class="itp-float-bar shadow-itp">
     <div class="left-item">
@@ -7,16 +34,21 @@
       </a>
     </div>
     <div class="center-item">
-      <a class="itp-float-bar-item " href="/archives/" title="照片">
-        照片
-      </a>
-      <a class="itp-float-bar-item " href="/gallery/" title="视频">
-        视频
-      </a>
+      <div v-if="getdata = 1" class="flex">
+        <div v-for="(item, index) in headerlinks">
+          <a class="itp-float-bar-item" :href="item.link" :title="item.title">
+            {{ item.title }}
+          </a>
+        </div>
+      </div>
+      <div v-else>Oh no 😢</div>
     </div>
   </div>
+
+
 </template>
 <style>
+
 root {
   --border-radius: 3px;
 }

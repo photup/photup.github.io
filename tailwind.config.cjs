@@ -22,6 +22,7 @@ module.exports = {
     extend: {
       colors: {
         tblack: '#222831',
+        tdeep: '304A5E'
       },
       corePlugins: {
         preflight: false,
