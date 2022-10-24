@@ -12,7 +12,7 @@ const props = defineProps({
 });
 const CoverLinks = ref([
   { title: '文章', link: 'https://tripper.press/' },
-  { title: '摄影', link: '/gallery' },
+  { title: '摄影', link: '#/gallery' },
   { title: '视频', link: '/videos' },
   { title: '实验室', link: '/codelab' },
 ])
@@ -48,12 +48,12 @@ console.log(CoverLinks);
   font-size: 18px;
   justify-content: center;
   align-items: center;
-  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 .cover-items:hover {
   box-shadow: inset 1px 1px 9px .1px #81858884;
-  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 .cover-area {

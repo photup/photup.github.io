@@ -29,7 +29,7 @@ let getdata = 1
 <template>
   <div class="itp-float-bar shadow-itp">
     <div class="left-item">
-      <a class="itp-float-bar-item " href="/" title="Photup">
+      <a class="itp-float-bar-item" href="/" title="Photup">
         Photup.
       </a>
     </div>
@@ -48,9 +48,9 @@ let getdata = 1
 
 </template>
 <style>
-
 root {
   --border-radius: 3px;
+  --theme-color: #71afdd;
 }
 
 .itp-float-bar {
@@ -70,6 +70,13 @@ root {
   background-color: transparent;
   color: #304A5E;
   font-size: 18px;
+  height: 18px;
+  transition: all .25s ease-in-out 0s;
+}
+
+.itp-float-bar .itp-float-bar-item:hover {
+  color: #71afdd;
+  transition: all .25s ease-in-out 0s;
 }
 
 .left-item {

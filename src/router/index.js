@@ -1,5 +1,5 @@
-import HomePage from "../App.vue";
-import Gallery from "../App.vue";
+import Index from "../App.vue";
+import Gallery from "../Gallery.vue";
 import { createRouter, createWebHistory } from 'vue-router';
 
 const router = createRouter({
@@ -7,8 +7,8 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'Home',
-      component: HomePage,
+      name: 'Index',
+      component: Index,
     },
     {
       path: '/gallery',

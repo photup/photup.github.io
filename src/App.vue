@@ -1,12 +1,13 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import Cover from "./components/Cover.vue";
-import Content from "./components/IndexContent.vue";
-import Header from "./components/Header.vue";
+import Cover from "./components/index-components/Cover.vue";
+import IndexContent from "./components/index-components/IndexContent.vue";
+import Header from "./components/index-components/Header.vue";
+import Gallery from "./Gallery.vue"
 </script>
 
 <template>
-  <section class="index-area md:grid h-screen w-screen">
+  <section class="cover-area md:grid h-screen w-screen">
     <div class="h-screen cover flex">
       <Cover title="Phot" titlespan="up." />
     </div>
@@ -14,9 +15,9 @@ import Header from "./components/Header.vue";
       <Content />
     </div>-->
   </section>
-  <section class="sec-area">
+  <section class="index-area">
     <Header />
-    <Content />
+    <IndexContent />
   </section>
 </template>
 

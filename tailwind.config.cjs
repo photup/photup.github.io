@@ -2,6 +2,7 @@
 module.exports = {
   content: ["./src/**/*.{html,js,css,cjs,vue}", "./index.html"],
   theme: {
+    // 替换原有的参数
     spacing: {
       '1': '8px',
       '2': '12px',
@@ -19,6 +20,7 @@ module.exports = {
     container: {
       center: true,
     },
+    // 扩展新的参数
     extend: {
       colors: {
         tblack: '#222831',
@@ -33,7 +35,7 @@ module.exports = {
       },
       boxShadow: {
         'itp': '1px 10px 30px 0 rgb(0 0 0 / 10%)',
-      }
+      },
     }
   }
 }
